@@ -2,6 +2,7 @@ import { CORE_CONCEPTS } from "./data.js";
 import Header from "./components/Header.jsx";
 import CoreConcepts from "./components/CoreComponents.jsx";
 import TabButton from "./components/TabButton.jsx";
+import { Fragment } from "react";
 import { useState } from 'react';
 import { EXAMPLES } from './data.js'
 function App() {
@@ -11,7 +12,7 @@ function App() {
     console.log(selectedButton);
   }
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>
         <section id="core-concepts">
@@ -41,7 +42,7 @@ function App() {
 
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 }
 
